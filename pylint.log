@@ -1,0 +1,12 @@
+************* Module index
+index.cgi:5: [C0303(trailing-whitespace), ] Trailing whitespace
+index.cgi:1: [C0114(missing-module-docstring), ] Missing module docstring
+index.cgi:4: [C0411(wrong-import-order), ] standard import "import os" should be placed before "import mariadb"
+index.cgi:5: [C0411(wrong-import-order), ] standard import "import sys" should be placed before "import mariadb"
+index.cgi:3: [W0611(unused-import), ] Unused import mariadb
+index.cgi:4: [W0611(unused-import), ] Unused import os
+index.cgi:5: [W0611(unused-import), ] Unused import sys
+
+------------------------------------------------------------------
+Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+
