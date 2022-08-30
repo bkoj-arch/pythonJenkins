@@ -9,8 +9,9 @@ pipeline {
 	
 sh 'python3 -m pylint --output-format=parseable index.cgi --msg-template="{path}:{line}: [{msg_id}({symbol}), {obj}] {msg}" | tee pylint.log || echo "pylint exited with $?"'
 sh 'echo "linting Success, Generating Report"'
-recordIssues enabledForFailure: true, aggregatingResults: true, tool: pyLint(pattern: 'pylint.log')
 
+sh 'cat pylint.log'
+                    recordIssues healthy: 1, tools: [pyLint(name: 'report name', pattern: '**/pylint.log')], unhealthy: 2
 }
 
 }	
