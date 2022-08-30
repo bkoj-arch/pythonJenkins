@@ -10,6 +10,7 @@ pipeline {
     stage('DEPLOY') {
       steps {
         sh 'cp index.cgi /var/lib/jenkins/index.cgi'
+	sh 'chmod 755 /var/lib/jenkins/index.cgi'
       }
     }
 
