@@ -9,8 +9,8 @@ pipeline {
 
     stage('DEPLOY') {
       steps {
-        sh 'cp index.cgi /var/lib/jenkins/index.cgi'
-	sh 'chmod 755 /var/lib/jenkins/index.cgi'
+        sh 'cp index.cgi /srv/pythoncgi/index.cgi'
+	sh 'chmod 755 /srv/pythoncgi/index.cgi'
       }
     }
 
