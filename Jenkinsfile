@@ -8,7 +8,7 @@ pipeline {
     }
     stage('TEST') {
 	steps {
-	sh '/usr/bin/pylint index.cgi'
+	sh 'pylint index.cgi'
 }
 
 }
